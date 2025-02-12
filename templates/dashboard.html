@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Memory</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Memory</h1>
+        <p>Welcome to the Automatic Memory dashboard. This is a basic template using Flask.</p>
+        <form action="/submit" method="post">
+            <label for="video-game">Name a video game:</label>
+            <input type="text" id="video-game" name="video-game" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if response_text %}
+        <div class="response">
+            <h2>Response:</h2>
+            <p>{{ response_text }}</p>
+        </div>
+        {% endif %}
+        {% if error_message %}
+        <div class="error">
+            <h2>Error:</h2>
+            <p>{{ error_message }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
