@@ -1,3 +1,4 @@
+/* Body styles - centers content vertically and horizontally */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f0f2f5;
 }
 
+/* Main container styling */
 .container {
     text-align: center;
     background: white;
@@ -17,6 +19,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Typography styles */
 h1 {
     color: #333;
     margin-bottom: 1rem;
@@ -25,4 +28,27 @@ h1 {
 p {
     color: #666;
     font-size: 1.1rem;
+}
+
+/* Table styling for crossplay information */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* Container override styles */
+.container {
+    background-color: white;
+    padding: 20px;
+    border: 0px
+}
+  
+/* Response section styling - centers content and sets width */
+.response {
+    width: 300px; 
+    margin: 0 auto; 
+    background-color: white;
+    padding: 10px;
+    border: 0px solid #ccc;
 }
